@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cosmetique</title>
+    <link rel="stylesheet" href="style.css">
+    <!---we had linked our css file----->
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='index.html'><img src="images/logo.png"></a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='#'>Accueil</a></li>
+                    <li><a href='#'>Service</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button>
+                    </li>
+                    <img src="C:/Users/weldtounesca12/Desktop/ca khalil/images/cart.jpg" width="25px" height="25px">
+                    <img src="C:/Users/weldtounesca12/Desktop/ca khalil/images/menu.jpg" class="menu-icon" onclick="menutoggle()">
+                </ul>
+               
+            </nav>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Login</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>S'inscrire</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email' required >
+		    <input type='password'class='input-field'placeholder='Entre Password' required>
+		    <input type='checkbox'class='check-box'><span>Souvenir mot de passe</span>
+		    <button type='submit'class='submit-btn'>Connexion</button>
+		 </form>
+		 <form id='register' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='Nom' required>
+		     <input type='text'class='input-field'placeholder='Prenom ' required>
+		     <input type='email'class='input-field'placeholder='Email' required>
+		     <input type='password'class='input-field'placeholder='Entre mot de passe' required>
+		     <input type='password'class='input-field'placeholder='Confirmer mot de passe'  required>
+		     <input type='checkbox'class='check-box'><span>Je suis d'accord pour les conditions</span>
+                    <button type='submit'class='submit-btn'>S'inscrire</button>
+	         </form>
+            </div>
+                <!------footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Creme</a></li>
+                        <li><a href="#">Maduillage</a></li>
+                        <li><a href="#">Gel Douche & Shompoing</a></li>
+                        <li><a href="#">Manucure</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    <!-----fin footer-->
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+    
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
