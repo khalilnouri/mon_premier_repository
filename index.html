@@ -2,126 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cosmetique</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Page</title>
     <link rel="stylesheet" href="style.css">
-    <!---we had linked our css file----->
-</head>
+  </head>
 <body>
-    <div class="full-page">
-        <div class="navbar">
-            <div>
-                <a href='index.html'><img src="images/logo.png"></a>
-            </div>
-            <nav>
-                <ul id='MenuItems'>
-                    <li><a href='#'>Accueil</a></li>
-                    <li><a href='#'>Service</a></li>
-                    <li><a href='#'>Contact</a></li>
-                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button>
-                    </li>
-                    <img src="C:/Users/weldtounesca12/Desktop/ca khalil/images/cart.jpg" width="25px" height="25px">
-                    <img src="C:/Users/weldtounesca12/Desktop/ca khalil/images/menu.jpg" class="menu-icon" onclick="menutoggle()">
-                </ul>
+  <div class="full-page">
+    <h1>Bonjour tout le monde</h1>
+    <p> Github est une entreprise de développement logiciel et de service dont le siège est situé aux États-Unis. 
+      <br>Github développe notamment la plateforme Github, l'éditeur de texte Atom ou encore le framework </p>
+        
+       <h1>Pour donner accès à des collaborateurs à votre dépot github, procédez comme suit:
 
-            </nav>
-        </div>
-        <div id='login-form'class='login-page'>
-            <div class="form-box">
-                <div class='button-box'>
-                    <div id='btn'></div>
-                    <button type='button'onclick='login()'class='toggle-btn'>Login</button>
-                    <button type='button'onclick='register()'class='toggle-btn'>S'inscrire</button>
-                </div>
-                <form id='login' class='input-group-login'>
-                    <input type='text'class='input-field'placeholder='Email' required >
-		    <input type='password'class='input-field'placeholder='Entre Password' required>
-		    <input type='checkbox'class='check-box'><span>Souvenir mot de passe</span>
-		    <button type='submit'class='submit-btn'>Connexion</button>
-		 </form>
-		 <form id='register' class='input-group-register'>
-		     <input type='text'class='input-field'placeholder='Nom' required>
-		     <input type='text'class='input-field'placeholder='Prenom ' required>
-		     <input type='email'class='input-field'placeholder='Email' required>
-		     <input type='password'class='input-field'placeholder='Entre mot de passe' required>
-		     <input type='password'class='input-field'placeholder='Confirmer mot de passe'  required>
-		     <input type='checkbox'class='check-box'><span>Je suis d'accord pour les conditions</span>
-                    <button type='submit'class='submit-btn'>S'inscrire</button>
-	         </form>
-            </div>
-                <!------footer-->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>company</h4>
-                    <ul>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">policy</a></li>
-                        <li><a href="#">affiliate program</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>get help</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">shipping</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">order status</a></li>
-                        <li><a href="#">payment options</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>online shop</h4>
-                    <ul>
-                        <li><a href="#">Creme</a></li>
-                        <li><a href="#">Maduillage</a></li>
-                        <li><a href="#">Gel Douche & Shompoing</a></li>
-                        <li><a href="#">Manucure</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-   </footer>
-    <!-----fin footer-->
-        </div>
-    </div>
-    <script>
-        var x=document.getElementById('login');
-		var y=document.getElementById('register');
-		var z=document.getElementById('btn');
-		function register()
-		{
-			x.style.left='-400px';
-			y.style.left='50px';
-			z.style.left='110px';
-		}
-		function login()
-		{
-			x.style.left='50px';
-			y.style.left='450px';
-			z.style.left='0px';
-		}
-	</script>
-
-	<script>
-        var modal = document.getElementById('login-form');
-        window.onclick = function(event) 
-        {
-            if (event.target == modal) 
-            {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+        <ul>Demandez le nom d'utilisateur de la personne que vous invitez en tant que collaborateur.
+          <br> Si elle n'a pas encore de nom d'utilisateur, elle doit s'inscrire sur GitHub.</ul>
+        <li>Sur GitHub, accédez à la page principale du dépot.</li>
+        <li>le nom de votre projet, cliquez sur Paramètres.</li> 
+        <li>Dans la barre latérale de gauche, cliquez sur Collaborateurs.</li>
+        <li>Sous Collaborateurs, commencez à taper le nom d'utilisateur du collaborateur.</li>
+        <li>Sélectionnez le nom d'utilisateur du collaborateur dans le menu déroulant.</li>
+        <li>Cliquez sur Ajouter un collaborateur.</li>
+        <li>L'utilisateur recevra un e-mail l'invitant au repository. Une fois qu'il aura accepté votre invitation,
+        <br> il aura un accès collaborateur à votre dépôt.</li> 
+  </div>
 </body>
 </html>
